@@ -39,7 +39,7 @@ p {
 body {
   font-family: 'Press Start 2P', monospace;
   font-size: 1rem;
-  background-color: grey;
+  background-color: lightseagreen;
   width: 100%;
   min-height: 100vh;
   display: flex;
