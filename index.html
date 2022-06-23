@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A number guessing game to test your mathematical problem solving skills"
+    />
+    <meta name="keywords" content="number, game" />
+    <meta name="author" content="Ismail Mamaniat" />
+    <meta name="date" content="Jun. 01, 2022" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Guess My Number</title>
+  </head>
+
+  <body>
+    <!-- Initial Robot Screen -->
+    <div class="initial-screen">
+      <div class="container">
+        <div class="robot-image-container">
+          <img
+            src="./images/normal-robot.png"
+            class="robot-image1"
+            alt="robot
+          image"
+          />
+        </div>
+        <div class="greeting-text">
+          <p>Hey human, you can call me</p>
+          <p class="robot-name">Johnny 5!</p>
+          <p>Want to play a game?</p>
+          <p>Coooool..</p>
+          <p>Before we start, tell me your name?</p>
+          <p class="username-alert">Your name, please..</p>
+        </div>
+        <div class="username-container">
+          <input type="text" class="username" placeholder="?" />
+          <button class="lets-go">Let's Go!</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Greeting Screen -->
+    <div class="greeting-screen">
+      <div class="container">
+        <div class="robot-image-container">
+          <img
+            src="./images/normal-robot.png"
+            class="robot-image2"
+            alt="robot image"
+          />
+        </div>
+        <div class="welcome-text">
+          <p class="user-welcome">Welcome... User</p>
+          <p>Let's play a number guessing game.</p>
+          <p>Choose your number challenge:</p>
+        </div>
+        <div class="radio-buttons">
+          <input
+            type="radio"
+            name="select-challenge"
+            value="10"
+            class="radio"
+            id="radio1"
+            checked
+          />
+          <label for="radio1">1-10</label>
+          <input
+            type="radio"
+            name="select-challenge"
+            value="20"
+            class="radio"
+            id="radio2"
+          />
+          <label for="radio2">1-20</label>
+          <input
+            type="radio"
+            name="select-challenge"
+            value="50"
+            class="radio"
+            id="radio3"
+          />
+          <label for="radio3">1-50</label>
+          <input
+            type="radio"
+            name="select-challenge"
+            value="100"
+            class="radio"
+            id="radio4"
+          />
+          <label for="radio4">1-100</label>
+        </div>
+        <div class="play-button-container">
+          <button class="play">Play</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Game Screen -->
+    <div class="game-screen">
+      <div class="container">
+        <div class="robot-image-container">
+          <img
+            src="./images/normal-robot.png"
+            class="robot-image3"
+            alt="robot
+          image"
+          />
+        </div>
+        <div class="robot-message-container">
+          <p class="robot-message">Guess My Number..</p>
+        </div>
+        <div class="secret-number-container">
+          <p class="secret-number">?</p>
+        </div>
+        <div class="mid-container">
+          <div class="score-data-container">
+            <div class="score-label-container">
+              <p class="score-label">Score: <span class="score">0</span></p>
+            </div>
+            <div class="high-score-label-container">
+              <p class="high-score-label">
+                High Score: <span class="high-score">0</span>
+              </p>
+            </div>
+            <div class="heart-container">
+              <img
+                src="./images/heart.png.png"
+                class="heart"
+                alt="heart icon"
+              />
+            </div>
+            <div class="lives-number">
+              <p class="lives-count">20</p>
+            </div>
+          </div>
+        </div>
+        <div class="game-controls-container">
+          <input
+            type="text"
+            class="guess-input"
+            placeholder="Enter Your Guess"
+          />
+          <button class="guess">Guess</button>
+          <button class="play-again" disabled>Play Again</button>
+        </div>
+        <div class="guessed-numbers-container">
+          <p>Guessed Numbers: <span class="guessed-numbers"></span></p>
+        </div>
+      </div>
+    </div>
+    <div class="reset-buttons">
+      <button class="retry">Retry Challenge</button>
+      <button class="another-challenge">Another Challenge</button>
+    </div>
+    <div class="not-worthy-container">
+      <p>Boris, you've partied enough. Get back to work!</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
